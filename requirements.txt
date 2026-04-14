@@ -1,0 +1,18 @@
+# Core Python version
+python_version >= 3.9
+
+# Data processing
+pyspark==3.5.0
+
+# Workflow orchestration
+apache-airflow==2.9.0
+
+# Streaming
+kafka-python==2.0.2
+
+# Utilities
+pandas==2.2.1
+numpy==1.26.4
+
+# Visualization (optional, for pipeline demos/logs)
+matplotlib==3.8.3
