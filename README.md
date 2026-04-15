@@ -15,20 +15,19 @@ ETL/ELT workflows using **PySpark**, **Airflow**, and **Kafka**. Includes sample
 - Real‑time streaming ingestion with Kafka
 - Sample datasets for reproducible demos
 - Modular design for extending pipelines
+## 🏗️ Repository Architecture Diagram
 
-### 📂 Repository Structure
-data-engineering-pipelines/
-│── etl/                     # Batch ETL workflows using PySpark
-│   ├── pyspark_etl.py       # Example ETL script
-│── elt/                     # ELT pipelines orchestrated with Airflow
-│   ├── airflow_dag.py       # Sample DAG for ELT orchestration
-│── streaming/               # Real-time ingestion with Kafka
-│   ├── kafka_consumer.py    # Streaming consumer example
-│── data/                    # Sample datasets for reproducible demos
-│── requirements.txt         # Python dependencies
-│── README.md                # Project documentation
-│── LICENSE                  # MIT License
-│── .gitignore               # Ignore build and environment files
+```mermaid
+flowchart TD
+    A[📂 data-engineering-pipelines] --> B[etl/ : PySpark ETL workflows]
+    A --> C[elt/ : Airflow DAGs for ELT]
+    A --> D[streaming/ : Kafka ingestion]
+    A --> E[data/ : Sample datasets]
+    A --> F[requirements.txt]
+    A --> G[README.md]
+    A --> H[LICENSE]
+    A --> I[.gitignore]
+
 
 ## 🚀 Quickstart
 Clone the repo and install dependencies:
