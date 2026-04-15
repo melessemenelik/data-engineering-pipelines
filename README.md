@@ -35,10 +35,7 @@ data-engineering-pipelines/
 - Real‑time ingestion via **[Kafka](ca://s?q=Add_Kafka_in_pipeline_workflow_diagram)**.  
 - Stored in a **[Data warehouse](ca://s?q=Add_data_warehouse_in_pipeline_workflow_diagram)**.  
 - Finally visualized in **[Dashboards](ca://s?q=Add_dashboards_in_pipeline_workflow_diagram)** for insights.  
-
-This avoids the repo structure errors because it’s a **workflow diagram**, not a file tree. It’s also recruiter‑friendly since it shows you understand the system architecture.  
-
-Would you like me to also draft a **timeline‑style diagram** (e.g., Batch → ELT → Streaming → Analytics) so you can choose between flowchart vs timeline visuals?
+*End‑to‑end data pipeline: from raw data ingestion through ETL/ELT orchestration and streaming, into the warehouse, and finally visualized as dashboards for actionable insights.*
 
 ## 🚀 Quickstart
 Clone the repo and install dependencies:
@@ -51,3 +48,10 @@ python etl/pyspark_etl.py
 airflow dags trigger elt_pipeline
 python streaming/kafka_consumer.py
 pip install -r requirements.txt
+### 🔮 Future Work
+- Add CI/CD pipelines for automated deployment of ETL/ELT workflows  
+- Integrate monitoring and alerting with Prometheus & Grafana  
+- Implement schema validation using Great Expectations  
+- Extend streaming with Spark Structured Streaming for advanced use cases  
+- Explore cross-cloud orchestration (AWS, Azure) for portability  
+- Add unit tests and data quality checks for reliability  
