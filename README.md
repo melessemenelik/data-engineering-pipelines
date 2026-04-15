@@ -48,6 +48,68 @@ python etl/pyspark_etl.py
 airflow dags trigger elt_pipeline
 python streaming/kafka_consumer.py
 pip install -r requirements.txt
+
+
+📍 This shows the **end‑to‑end flow**: raw data → streaming/batch ingestion → warehouse → orchestration → dashboards.
+
+---
+
+### 🏗️ Architecture Diagram (Box Style)
+
+```markdown
+## 🏗️ Architecture Diagram  
+
+This project demonstrates scalable data engineering pipelines:
+
+                 ┌───────────────────────────────┐
+                 │        Data Sources           │
+                 │   Logs, APIs, Sample Datasets │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Streaming Ingestion Layer   │
+                 │   Apache Kafka Consumers      │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Batch ETL Layer             │
+                 │   PySpark Transformations     │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   ELT Orchestration Layer     │
+                 │   Apache Airflow DAGs         │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Data Warehouse              │
+                 │   Structured Storage (SQL/Parquet) │
+                 └───────────────┬───────────────┘
+                                 │
+                 ┌───────────────┴───────────────┐
+                 │   Visualization Layer         │
+                 │   Dashboards & BI Tools       │
+                 └───────────────────────────────┘
+
+Key components:
+- **[Data sources](ca://s?q=Explain_data_sources_in_data_engineering)**: logs, APIs, sample datasets  
+- **[Streaming ingestion](ca://s?q=Explain_streaming_ingestion_with_Kafka)**: Apache Kafka consumers  
+- **[Batch ETL](ca://s?q=Explain_batch_ETL_with_PySpark)**: PySpark transformations  
+- **[ELT orchestration](ca://s?q=Explain_ELT_orchestration_with_Airflow)**: Airflow DAGs for scheduling  
+- **[Data warehouse](ca://s?q=Explain_data_warehouse_in_data_pipelines)**: structured storage for analytics  
+- **[Visualization](ca://s?q=Explain_visualization_in_data_pipelines)**: dashboards and BI tools
+
+## 🔄 Data Engineering Workflow  
+
+```mermaid
+flowchart LR
+    A[Data Sources] --> B[Streaming Ingestion (Kafka)]
+    A --> C[Batch ETL (PySpark)]
+    B --> D[Data Warehouse]
+    C --> D[Data Warehouse]
+    D --> E[ELT Orchestration (Airflow)]
+    E --> F[Dashboards & Insights]
+
 ### 🔮 Future Work
 - Add CI/CD pipelines for automated deployment of ETL/ELT workflows  
 - Integrate monitoring and alerting with Prometheus & Grafana  
