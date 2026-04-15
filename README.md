@@ -19,7 +19,7 @@ ETL/ELT workflows using **PySpark**, **Airflow**, and **Kafka**. Includes sample
 
 ```mermaid
 flowchart TD
-    A[📂 data-engineering-pipelines] --> B[etl/ : PySpark ETL workflows]
+    A[data-engineering-pipelines] --> B[etl/ : PySpark ETL workflows]
     A --> C[elt/ : Airflow DAGs for ELT]
     A --> D[streaming/ : Kafka ingestion]
     A --> E[data/ : Sample datasets]
@@ -27,6 +27,7 @@ flowchart TD
     A --> G[README.md]
     A --> H[LICENSE]
     A --> I[.gitignore]
+
 
 
 ## 🚀 Quickstart
