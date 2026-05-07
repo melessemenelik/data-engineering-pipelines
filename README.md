@@ -16,6 +16,7 @@ ETL/ELT workflows using **PySpark**, **Airflow**, and **Kafka**. Includes sample
 - Sample datasets for reproducible demos
 - Modular design for extending pipelines
 ### 📂 Repository Structure
+```bash
 data-engineering-pipelines/
 │── etl/                     # Batch ETL workflows using PySpark
 │   ├── pyspark_etl.py       # Example ETL script
