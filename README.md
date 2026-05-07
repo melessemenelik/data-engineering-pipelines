@@ -102,6 +102,7 @@ Key components:
 - **[Data warehouse](ca://s?q=Explain_data_warehouse_in_data_pipelines)**: structured storage for analytics  
 - **[Visualization](ca://s?q=Explain_visualization_in_data_pipelines)**: dashboards and BI tools
 
+
 ```
 ## 🔄 Data Engineering Workflow  
 
@@ -113,8 +114,8 @@ flowchart LR
     C --> D[Data Warehouse]
     D --> E[ELT Orchestration (Airflow)]
     E --> F[Dashboards & Insights]
-
 ```
+
 ### 🔮 Future Work
 - Add CI/CD pipelines for automated deployment of ETL/ELT workflows  
 - Integrate monitoring and alerting with Prometheus & Grafana  
