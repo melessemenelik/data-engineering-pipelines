@@ -29,6 +29,7 @@ data-engineering-pipelines/
 │── README.md                # Project documentation
 │── LICENSE                  # MIT License
 │── .gitignore               # Ignore build and environment files
+
 *Organized modules for batch ETL, ELT orchestration, and streaming workflows, with clear separation of datasets, dependencies, and documentation.*
 👉 This diagram shows the **end-to-end flow**:  
 - **[Data sources](ca://s?q=Add_data_sources_in_pipeline_workflow_diagram)** feeding into **[ETL](ca://s?q=Add_ETL_in_pipeline_workflow_diagram)** with PySpark.  
@@ -37,7 +38,7 @@ data-engineering-pipelines/
 - Stored in a **[Data warehouse](ca://s?q=Add_data_warehouse_in_pipeline_workflow_diagram)**.  
 - Finally visualized in **[Dashboards](ca://s?q=Add_dashboards_in_pipeline_workflow_diagram)** for insights.  
 *End‑to‑end data pipeline: from raw data ingestion through ETL/ELT orchestration and streaming, into the warehouse, and finally visualized as dashboards for actionable insights.*
-
+```
 ## 🚀 Quickstart
 Clone the repo and install dependencies:
 
