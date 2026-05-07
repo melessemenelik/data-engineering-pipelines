@@ -93,7 +93,7 @@ This project demonstrates scalable data engineering pipelines:
                  │   Visualization Layer         │
                  │   Dashboards & BI Tools       │
                  └───────────────────────────────┘
-```
+
 Key components:
 - **[Data sources](ca://s?q=Explain_data_sources_in_data_engineering)**: logs, APIs, sample datasets  
 - **[Streaming ingestion](ca://s?q=Explain_streaming_ingestion_with_Kafka)**: Apache Kafka consumers  
@@ -108,12 +108,13 @@ Key components:
 
 ```mermaid
 flowchart LR
-    A[Data Sources] --> B[Streaming Ingestion (Kafka)]
-    A --> C[Batch ETL (PySpark)]
-    B --> D[Data Warehouse]
-    C --> D[Data Warehouse]
-    D --> E[ELT Orchestration (Airflow)]
-    E --> F[Dashboards & Insights]
+    A["Data Sources"] --> B["Streaming Ingestion:<br>Kafka"]
+    A --> C["Batch ETL:<br>PySpark"]
+    B --> D["Data Warehouse"]
+    C --> D["Data Warehouse"]
+    D --> E["ELT Orchestration:<br>Airflow"]
+    E --> F["Dashboards & Insights"]
+
 ```
 
 ### 🔮 Future Work
