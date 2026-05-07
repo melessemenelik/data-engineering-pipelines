@@ -99,6 +99,7 @@ Key components:
 - **[ELT orchestration](ca://s?q=Explain_ELT_orchestration_with_Airflow)**: Airflow DAGs for scheduling  
 - **[Data warehouse](ca://s?q=Explain_data_warehouse_in_data_pipelines)**: structured storage for analytics  
 - **[Visualization](ca://s?q=Explain_visualization_in_data_pipelines)**: dashboards and BI tools
+
 ```
 ## 🔄 Data Engineering Workflow  
 
