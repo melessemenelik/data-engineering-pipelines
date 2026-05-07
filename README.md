@@ -15,6 +15,7 @@ ETL/ELT workflows using **PySpark**, **Airflow**, and **Kafka**. Includes sample
 - Real‑time streaming ingestion with Kafka
 - Sample datasets for reproducible demos
 - Modular design for extending pipelines
+
 ### 📂 Repository Structure
 ```text
 data-engineering-pipelines/
@@ -92,7 +93,7 @@ This project demonstrates scalable data engineering pipelines:
                  │   Visualization Layer         │
                  │   Dashboards & BI Tools       │
                  └───────────────────────────────┘
-
+```
 Key components:
 - **[Data sources](ca://s?q=Explain_data_sources_in_data_engineering)**: logs, APIs, sample datasets  
 - **[Streaming ingestion](ca://s?q=Explain_streaming_ingestion_with_Kafka)**: Apache Kafka consumers  
